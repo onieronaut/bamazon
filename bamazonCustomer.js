@@ -18,6 +18,7 @@ connection.connect(function (err) {
     displayProducts();
 })
 
+//Makes a query call to the database and logs the ID, product name, and prices for all entries
 function displayProducts() {
 
     connection.query("SELECT * FROM products", function (err, res) {
@@ -31,10 +32,12 @@ function displayProducts() {
                 " | Price: $" + res[i].price
             )
         }
+        //res.length is the amount of products in the database, we are passing into the next function for validation purposes
         buyProducts(res.length);
     })
 }
 
+//Prompts the user which product they want to buy and how many. Checks the database to make sure there is enough product in stock for the user to buy and if successful, updates the database to the new stock.
 function buyProducts(numProducts) {
 
     const questions = [
@@ -43,6 +46,7 @@ function buyProducts(numProducts) {
             name: "product_id",
             message: "What is the ID of the product you would like to buy?",
             validate: function (input) {
+                //If the user input is not a number between the possible amount of product IDs they will be asksed to enter a correct number
                 if (!isNaN(input)) {
                     if (input > 0 && input <= numProducts) {
                         return true;
@@ -56,7 +60,7 @@ function buyProducts(numProducts) {
             name: "units_purchased",
             message: "How many units of this product would you like to buy?",
             validate: function (input) {
-                if (!isNaN(input)) {
+                if (!isNaN(input) && input > 0) {
                     return true;
                 }
                 return "Please enter a valid number"
