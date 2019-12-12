@@ -13,7 +13,16 @@ const connection = mysql.createConnection({
 
 const inquirer = require("inquirer");
 
-const questions =
+connection.connect(function (err) {
+    if (err) throw err;
+    menuPrompt();
+})
+
+
+// Inquirer prompt to ask user what they would like to do followed by a switch statement to take action based on their decision.
+function menuPrompt() {
+
+    const questions =
 {
     type: "list",
     name: "action",
@@ -26,15 +35,6 @@ const questions =
         "Exit"
     ]
 }
-
-connection.connect(function (err) {
-    if (err) throw err;
-    menuPrompt();
-})
-
-
-// Inquirer prompt to ask user what they would like to do followed by a switch statement to take action based on their decision.
-function menuPrompt() {
 
     inquirer.prompt(questions).then(answers => {
 
@@ -209,7 +209,7 @@ function addNewProduct() {
             stock_quantity: answers.stock
         }, function (err, res) {
             if (err) throw err;
-            console.log("New product successfully added!")
+            console.log("New product successfully added!\n")
             menuPrompt();
         }
         )

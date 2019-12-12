@@ -103,10 +103,11 @@ function buyProducts(numProducts) {
                                     if (err) throw err;
 
                                     let total = (res[0].price * answers.units_purchased);
+                                    addSales(answers.product_id, total);
                                     console.log("Your order has been placed! The total cost was $" + total);
 
+                                    connection.end();
                                 })
-                            connection.end();
                         })
                 }
             });
@@ -114,4 +115,13 @@ function buyProducts(numProducts) {
 
 
     })
+}
+
+// After each purchase the total price of the sale is stored as an all time total in the database
+function addSales(product_id, total_price) {
+
+    connection.query("UPDATE products SET product_sales = product_sales + ? WHERE id = ?",
+        [total_price, product_id], function (err, res) {
+            if (err) throw err
+        })
 }

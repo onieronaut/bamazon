@@ -19,6 +19,7 @@
   "homepage": "https://github.com/onieronaut/bamazon#readme",
   "dependencies": {
     "inquirer": "^7.0.0",
-    "mysql": "^2.17.1"
+    "mysql": "^2.17.1",
+    "table": "^5.4.6"
   }
 }
