@@ -73,7 +73,7 @@ function viewDepartmentSales() {
         ];
 
         for (let i = 0; i < res.length; i++) {
-            data.push([res[i].department_id, res[i].department_name, res[i].over_head_costs, res[i].product_sales, (res[i].over_head_costs - res[i].product_sales)])
+            data.push([res[i].department_id, res[i].department_name, res[i].over_head_costs, res[i].product_sales, (res[i].product_sales - res[i].over_head_costs)])
         }
 
         // Using the NPM table package we can output our data into a clean formatted table
