@@ -79,8 +79,9 @@ The sales of all items within the same department are condensed into a total val
 
 ## Built With
 
-* Javascript
-* [MySQL](https://i.imgur.com/QG2NE2Y.gifv)
+* [Javascript](https://www.javascript.com/)
+* [Node](https://nodejs.org/en/)
+* [MySQL](https://www.mysql.com)
 * [Inquirer](https://www.npmjs.com/package/inquirer)
 * [NPM MySQL](https://www.npmjs.com/package/mysql)
 * [NPM Table](https://www.npmjs.com/package/table)

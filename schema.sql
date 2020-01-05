@@ -4,8 +4,6 @@ CREATE database bamazon;
 
 USE bamazon;
 
-select * from products
-
 CREATE TABLE products (
 	id INT NOT NULL AUTO_INCREMENT,
     product_name VARCHAR(50) NOT NULL,
