@@ -88,4 +88,4 @@ The sales of all items within the same department are condensed into a total val
 
 ## Author
 
-* Jerard Gonzalez | [GitHub](https://github.com/onieronaut) [LinkedIn](https://www.linkedin.com/in/jerard-gonzalez-a07467113/) [Portfolio](https://onieronaut.github.io/Updated-Portfolio/)
+* Jerard Gonzalez | [GitHub](https://github.com/onieronaut) [LinkedIn](https://www.linkedin.com/in/jerard-gonzalez-a07467113/) [Portfolio](https://onieronaut.github.io/portfolio3/)
