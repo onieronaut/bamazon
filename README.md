@@ -92,4 +92,4 @@ I really enjoyed working on this project. There is something about working on a 
 
 ## Author
 
-* Jerard Gonzalez | [GitHub](https://github.com/onieronaut) [LinkedIn](https://www.linkedin.com/in/jerard-gonzalez-a07467113/) [Portfolio](https://onieronaut.github.io/portfolio3/)
+* Jerard Gonzalez | [GitHub](https://github.com/onieronaut) [LinkedIn](https://www.linkedin.com/in/jerard-gonzalez-a07467113/) [Portfolio](https://onieronaut.github.io/)
