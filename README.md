@@ -77,6 +77,10 @@ This function asks the user to input the name of a new department along with a v
 The sales of all items within the same department are condensed into a total value and displayed, along with the overhead costs of that department and a total profit value is calculated from the difference between the two.
 ![bamazon supervisor view department example](assets/examples/bamazon_supervisor_view_department.gif)
 
+## Thoughts
+
+I really enjoyed working on this project. There is something about working on a CLI application that I find satifying. The technology of today seems to be constantly oversensitizing us with flashy effects and high resolution imagery, and something about a simple black and white screen with some text that can interact with some simple data and stll create valuable insights is something I think about often. Node is a lot of fun to work with, I find it very intuitive and the amount of packages I could keep adding to this CLI app to make it look even more clean are limitless. I definitely find myself taking a more simple and clean approach aesthetically when designing projects.
+
 ## Built With
 
 * [Javascript](https://www.javascript.com/)
